@@ -1,0 +1,13 @@
+---
+layout: tool
+title: "JSON Formatter"
+category: "Data & format"
+description: "Validera och formatera JSON utan att skicka innehållet till en annan tjänst."
+intro: "Validera och formatera JSON utan att skicka innehållet till en annan tjänst."
+help_title: "Giltig JSON"
+help: "JSON tillåter inte kommentarer eller avslutande kommatecken. Verktyget använder webbläsarens JSON-parser och accepterar maximalt 1 MiB text."
+permalink: /tools/json-formatter/
+tools_js: true
+---
+
+<div class="tool-panel" data-tool="json"><div class="tool-panel-heading"><div><span class="mini-kicker">DATA / JSON</span><h2>Validera och formatera</h2></div><span class="tool-badge">JSON</span></div><form id="json-form" class="tool-form"><label for="json-input">JSON att behandla</label><textarea id="json-input" rows="10" spellcheck="false" placeholder='{ "name": "Rossolution", "active": true }'>{"name":"Rossolution","active":true,"services":["IAM","Security"]}</textarea><div class="tool-actions"><button class="button button-primary" type="submit" name="action" value="format">Formatera</button><button class="small-button" type="submit" name="action" value="minify">Komprimera</button><button class="small-button" type="button" data-reset-json>Rensa</button></div><p class="input-hint">Max 1 MiB text. JavaScript kan avrunda heltal större än 2⁵³−1. Undvik stora numeriska ID:n.</p></form><div class="tool-results" id="json-result" hidden><div class="result-heading"><h3>Resultat</h3><button class="small-button" data-copy-target="#json-output" type="button">Kopiera</button></div><textarea class="tool-output-area" rows="12" id="json-output" readonly spellcheck="false" aria-label="Formaterad JSON"></textarea></div><p id="json-status" class="tool-status" role="status" aria-live="polite"></p></div>

@@ -20,6 +20,7 @@
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  {% if page.tools_js %}<script type="module" src="{{ '/assets/js/tools-ui.mjs' | relative_url }}"></script>{% endif %}
 </head>
 <body>
   <a class="skip-link" href="#main">Hoppa till innehållet</a>
@@ -34,7 +35,7 @@
       </button>
       <nav class="primary-nav" id="primary-nav" aria-label="Huvudnavigering">
         <a href="{{ '/#expertis' | relative_url }}">Expertis</a>
-        <a href="{{ '/#arbetssatt' | relative_url }}">Arbetssätt</a>
+        <a href="{{ '/tools/' | relative_url }}"{% if page.url contains '/tools/' %} aria-current="page"{% endif %}>IT-verktyg</a>
         <a href="{{ '/articles/' | relative_url }}"{% if page.url contains '/articles/' %} aria-current="page"{% endif %}>Artiklar</a>
         <a href="{{ '/#om' | relative_url }}">Om Rossolution</a>
         <a class="nav-contact" href="{{ '/#kontakt' | relative_url }}">Ta kontakt <span aria-hidden="true">↗</span></a>
@@ -49,7 +50,7 @@
         <p>Technical Solution Architect &amp; IT Specialist.<br>Från Rossö, för verksamheter med komplex IT.</p>
       </div>
       <div class="footer-links">
-        <div><strong>Utforska</strong><a href="{{ '/#expertis' | relative_url }}">Expertis</a><a href="{{ '/#arbetssatt' | relative_url }}">Arbetssätt</a><a href="{{ '/articles/' | relative_url }}">Artiklar & nyheter</a></div>
+        <div><strong>Utforska</strong><a href="{{ '/#expertis' | relative_url }}">Expertis</a><a href="{{ '/#arbetssatt' | relative_url }}">Arbetssätt</a><a href="{{ '/tools/' | relative_url }}">IT-verktyg</a><a href="{{ '/articles/' | relative_url }}">Artiklar & nyheter</a></div>
         <div><strong>Kontakt</strong><a href="mailto:info@rossolution.se">info@rossolution.se</a><span>Rossö · Bohuslän</span></div>
       </div>
     </div>

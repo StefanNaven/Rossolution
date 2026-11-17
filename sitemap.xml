@@ -5,5 +5,7 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>{{ '/' | absolute_url }}</loc></url>
   <url><loc>{{ '/articles/' | absolute_url }}</loc></url>
+  <url><loc>{{ '/tools/' | absolute_url }}</loc></url>
+  {% for tool in site.data.tools %}<url><loc>{{ '/tools/' | append: tool.slug | append: '/' | absolute_url }}</loc></url>{% endfor %}
   {% for post in site.posts %}<url><loc>{{ post.url | absolute_url }}</loc><lastmod>{{ post.date | date: '%Y-%m-%d' }}</lastmod></url>{% endfor %}
 </urlset>

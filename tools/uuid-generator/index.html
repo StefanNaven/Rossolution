@@ -1,0 +1,13 @@
+---
+layout: tool
+title: "UUID Generator"
+category: "Identifierare"
+description: "Skapa ett eller flera slumpmässiga UUID version 4 för konfigurationer och testdata."
+intro: "Skapa ett eller flera slumpmässiga UUID version 4 för konfigurationer och testdata."
+help_title: "UUID v4"
+help: "UUID används som identifierare, inte som hemligheter eller autentiseringsuppgifter. Slumpen hämtas från Web Crypto API."
+permalink: /tools/uuid-generator/
+tools_js: true
+---
+
+<div class="tool-panel" data-tool="uuid"><div class="tool-panel-heading"><div><span class="mini-kicker">IDENTIFIERARE / UUID</span><h2>Generera UUID v4</h2></div><span class="tool-badge">v4</span></div><form class="tool-form" id="uuid-form"><label for="uuid-count">Antal UUID (1–20)</label><input type="number" id="uuid-count" value="5" min="1" max="20" step="1"><div class="tool-actions"><button class="button button-primary" type="submit">Generera UUID</button></div></form><div class="tool-results" id="uuid-result" hidden><div class="result-heading"><h3>Genererade identifierare</h3><button class="small-button" data-copy-target="#uuid-output" type="button">Kopiera alla</button></div><textarea id="uuid-output" class="tool-output-area" rows="10" readonly spellcheck="false" aria-label="Genererade UUID"></textarea></div><p id="uuid-status" class="tool-status" role="status" aria-live="polite"></p></div>

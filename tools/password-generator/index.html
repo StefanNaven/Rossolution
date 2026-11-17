@@ -1,0 +1,13 @@
+---
+layout: tool
+title: "Password Generator"
+category: "Säkerhet"
+description: "Skapa unika lösenord med kryptografiskt stark slump från webbläsaren."
+intro: "Skapa unika lösenord med kryptografiskt stark slump från webbläsaren."
+help_title: "Skydda lösenorden"
+help: "Lösenorden sparas inte av verktyget. Om du kopierar ett lösenord ligger det i urklippet tills det skrivs över. Använd en betrodd lösenordshanterare för förvaring."
+permalink: /tools/password-generator/
+tools_js: true
+---
+
+<div class="tool-panel" data-tool="password"><div class="tool-panel-heading"><div><span class="mini-kicker">SÄKERHET / SLUMP</span><h2>Generera ett lösenord</h2></div><span class="tool-badge">Web Crypto</span></div><form id="password-form" class="tool-form"><label for="password-length">Lösenordslängd (12–64 tecken)</label><input id="password-length" type="number" min="12" max="64" step="1" value="20"><fieldset class="tool-checkboxes"><legend>Teckentyper</legend><label><input type="checkbox" id="password-lower" checked> Små bokstäver (a–z)</label><label><input type="checkbox" id="password-upper" checked> Stora bokstäver (A–Z)</label><label><input type="checkbox" id="password-digits" checked> Siffror (0–9)</label><label><input type="checkbox" id="password-symbols" checked> Specialtecken</label><label><input type="checkbox" id="password-avoid"> Undvik liknande tecken (0/O, 1/l/I)</label></fieldset><div class="tool-actions"><button class="button button-primary" type="submit">Generera lösenord</button></div></form><div class="tool-results" id="password-result" hidden><div class="result-heading"><h3>Ditt lösenord</h3><button class="small-button" data-copy-target="#password-output" type="button">Kopiera</button></div><div class="password-display"><input id="password-output" type="password" readonly autocomplete="off" aria-label="Genererat lösenord"><button class="small-button" id="password-show" type="button" aria-pressed="false">Visa</button></div><p class="input-hint">Detta lösenord sparas inte. Hantera urklippet med omsorg.</p></div><p id="password-status" class="tool-status" role="status" aria-live="polite"></p></div>

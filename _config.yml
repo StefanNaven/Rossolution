@@ -10,6 +10,8 @@ permalink: /articles/:title/
 exclude:
   - README.md
   - news-guide.md
+  - tools-guide.md
+  - tests
   - article-template.md
   - Gemfile
   - Gemfile.lock

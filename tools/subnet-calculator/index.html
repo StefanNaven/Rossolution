@@ -1,0 +1,13 @@
+---
+layout: tool
+title: "IPv4 Subnet Calculator"
+category: "Nätverk"
+description: "Beräkna nätadress, mask, broadcast och värdadresser direkt från en IPv4-adress med CIDR-prefix."
+intro: "Beräkna nätadress, mask, broadcast och värdadresser direkt från en IPv4-adress med CIDR-prefix."
+help_title: "IPv4 och CIDR"
+help: "/31 räknas som två adresser i ett punkt-till-punkt-nät enligt RFC 3021. /32 representerar en enskild adress. Använd inte resultatet som enda källa vid produktionsändringar."
+permalink: /tools/subnet-calculator/
+tools_js: true
+---
+
+<div class="tool-panel" data-tool="subnet"><div class="tool-panel-heading"><div><span class="mini-kicker">NÄTVERK / IPV4</span><h2>Beräkna ditt nät</h2></div><span class="tool-badge">IPv4</span></div><form id="subnet-form" class="tool-form"><label for="subnet-input">IP-adress med CIDR-prefix</label><div class="tool-input-row"><input id="subnet-input" type="text" value="192.168.1.42/24" placeholder="192.168.1.42/24" required spellcheck="false" autocomplete="off"><button class="button button-primary" type="submit">Beräkna <span aria-hidden="true">↗</span></button></div><p class="input-hint">Exempel: 10.0.0.1/8 · 172.16.10.10/28 · 192.168.1.1/31</p></form><div id="subnet-result" class="tool-results" hidden><div class="result-heading"><h3>Beräknat nät</h3><button class="small-button" data-copy-target="#subnet-summary" type="button">Kopiera resultat</button></div><dl id="subnet-fields" class="result-grid"></dl><pre id="subnet-summary" class="sr-only"></pre></div><p id="subnet-status" class="tool-status" role="status" aria-live="polite"></p></div>

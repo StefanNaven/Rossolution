@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="tool-page-head"><div class="container">
+  <a class="back-link" href="{{ '/tools/' | relative_url }}"><span aria-hidden="true">←</span> Alla IT-verktyg</a>
+  <span class="section-kicker">ROSSOLUTION TOOLBOX / {{ page.category | upcase | escape }}</span>
+  <h1>{{ page.title | escape }}</h1><p>{{ page.intro | escape }}</p>
+</div></section>
+<section class="tool-page-body"><div class="container tool-page-grid"><div class="tool-workspace">
+  {{ content }}
+</div><aside class="tool-help"><div class="tool-help-card"><span class="section-kicker">ATT TÄNKA PÅ</span><h2>{{ page.help_title | default: 'Körs i webbläsaren' | escape }}</h2><p>{{ page.help | escape }}</p><p>Inmatning behandlas lokalt. Verktygen använder inga externa API-anrop.</p><a class="text-link" href="{{ '/tools/' | relative_url }}">Fler verktyg <span aria-hidden="true">↗</span></a></div></aside></div></section>

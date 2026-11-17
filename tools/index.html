@@ -1,0 +1,20 @@
+---
+layout: default
+title: IT-verktyg
+description: Kostnadsfria webbaserade IT-verktyg för nätverk, JSON, Base64, tidsstämplar och tekniskt arbete. Körs lokalt i webbläsaren.
+permalink: /tools/
+tools_js: true
+---
+<section class="toolbox-hero">
+  <div class="container toolbox-hero-grid">
+    <div><a class="back-link" href="{{ '/' | relative_url }}"><span aria-hidden="true">←</span> Startsidan</a><span class="section-kicker">ROSSOLUTION / TOOLBOX</span><h1>IT-verktyg som<br><em>förenklar vardagen.</em></h1><p>Små, användbara hjälpmedel för nätverk, data, felsökning och utveckling. Välj ett verktyg och börja direkt – ingen inloggning behövs.</p><div class="toolbox-trust"><span class="status-dot" aria-hidden="true"></span> Inmatning behandlas lokalt i webbläsaren</div></div>
+    <div class="terminal-art" aria-hidden="true"><div class="terminal-top"><span></span><span></span><span></span><small>rossolution / tools</small></div><div class="terminal-body"><div><i>➜</i> <b>toolbox</b> --list</div><div class="term-muted">7 utilities available</div><div class="term-hr"></div><div><em>✓</em> subnet-calculator</div><div><em>✓</em> json-formatter</div><div><em>✓</em> text-compare</div><div><em>✓</em> base64-converter</div><div><em>✓</em> timestamp-converter</div><div><em>✓</em> uuid-generator</div><div><em>✓</em> password-generator</div><div class="term-prompt"><i>➜</i> <span class="term-cursor"></span></div></div></div>
+  </div>
+</section>
+<section class="section toolbox-list" aria-label="Tillgängliga IT-verktyg"><div class="container">
+  <div class="toolbox-toolbar"><div><span class="section-kicker">VERKTYGSKATALOG</span><h2>Välj vad du behöver.</h2><p id="tools-count" role="status" aria-live="polite">{{ site.data.tools.size }} verktyg</p></div><div class="tool-search-wrap"><label for="tools-search">Sök verktyg</label><input id="tools-search" type="search" placeholder="T.ex. JSON, IP eller säkerhet" autocomplete="off"></div></div>
+  <div class="tool-card-grid tool-catalog" id="tools-list">{% for tool in site.data.tools %}
+    <a class="tool-card" data-search="{{ tool.title | append: ' ' | append: tool.category | append: ' ' | append: tool.description | escape }}" href="{{ '/tools/' | append: tool.slug | append: '/' | relative_url }}"><span class="tool-card-top"><span class="tool-icon" aria-hidden="true">{{ tool.code | escape }}</span><span class="tool-category">{{ tool.category | escape }}</span></span><h3>{{ tool.title | escape }}</h3><p>{{ tool.description | escape }}</p><span class="tool-card-link">Öppna verktyget <span aria-hidden="true">↗</span></span></a>
+  {% endfor %}</div><p class="tool-empty" id="tools-empty" hidden>Inga verktyg matchar sökningen.</p>
+  <div class="toolbox-note"><strong>Hur fungerar det?</strong><p>Verktygen använder JavaScript och arbetar med dina inmatade uppgifter i webbläsaren. De gör inga egna nätverksanrop. Undvik ändå att klistra in hemligheter eller personuppgifter i en webbsida som du inte litar på.</p></div>
+</div></section>

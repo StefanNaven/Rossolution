@@ -1,0 +1,13 @@
+---
+layout: tool
+title: "Base64 Converter"
+category: "Data & format"
+description: "Koda UTF-8-text till Base64 eller avkoda Base64 till läsbar text."
+intro: "Koda UTF-8-text till Base64 eller avkoda Base64 till läsbar text."
+help_title: "Ingen kryptering"
+help: "Base64 är en kodning, inte kryptering. Alla som har den kodade texten kan normalt återställa ursprungsinnehållet. Endast text i giltig UTF-8 stöds."
+permalink: /tools/base64-converter/
+tools_js: true
+---
+
+<div class="tool-panel" data-tool="base64"><div class="tool-panel-heading"><div><span class="mini-kicker">DATA / KODNING</span><h2>Text ↔ Base64</h2></div><span class="tool-badge">UTF-8</span></div><form id="base64-form" class="tool-form"><label for="base64-input">Text eller Base64</label><textarea id="base64-input" rows="8" spellcheck="false" placeholder="Skriv text eller klistra in Base64">Hej Rossolution! åäö</textarea><div class="tool-actions"><button class="button button-primary" type="submit" name="action" value="encode">Koda till Base64</button><button class="small-button" type="submit" name="action" value="decode">Avkoda till text</button></div></form><div class="tool-results" id="base64-result" hidden><div class="result-heading"><h3>Resultat</h3><button class="small-button" data-copy-target="#base64-output" type="button">Kopiera</button></div><textarea class="tool-output-area" id="base64-output" rows="8" readonly spellcheck="false" aria-label="Resultat av Base64-konverteringen"></textarea></div><p id="base64-status" class="tool-status" role="status" aria-live="polite"></p></div>

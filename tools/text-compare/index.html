@@ -1,0 +1,17 @@
+---
+layout: tool
+title: "Text Compare"
+category: "Text & kod"
+description: "Jämför två konfigurationer, textfiler eller kodutdrag och identifiera ändrade rader."
+intro: "Jämför två konfigurationer, textfiler eller kodutdrag och identifiera ändrade rader."
+help_title: "Radbaserad jämförelse"
+help: "Jämförelsen görs rad för rad. Verktyget markerar tillagda och borttagna rader; det tolkar inte ändringarnas innebörd. Högst 250 rader per text."
+permalink: /tools/text-compare/
+tools_js: true
+---
+
+<div class="tool-panel" data-tool="diff"><div class="tool-panel-heading"><div><span class="mini-kicker">TEXT / DIFF</span><h2>Jämför två versioner</h2></div><span class="tool-badge">DIFF</span></div><form id="diff-form" class="tool-form"><div class="tool-two-col"><div><label for="diff-left">Före</label><textarea id="diff-left" rows="11" spellcheck="false" placeholder="Klistra in första versionen">timeout=30
+mode=enabled
+log=info</textarea></div><div><label for="diff-right">Efter</label><textarea id="diff-right" rows="11" spellcheck="false" placeholder="Klistra in andra versionen">timeout=60
+mode=enabled
+log=debug</textarea></div></div><div class="tool-actions"><button class="button button-primary" type="submit">Jämför <span aria-hidden="true">↗</span></button><button class="small-button" type="button" data-swap-diff>Byt plats</button></div><p class="input-hint">Max 250 rader per version. Jämförelsen är radbaserad.</p></form><div id="diff-result" class="tool-results" hidden><div class="result-heading"><h3>Skillnader <small id="diff-stats"></small></h3><button class="small-button" data-copy-diff type="button">Kopiera diff</button></div><div id="diff-output" class="diff-output" role="region" aria-label="Skillnader mellan versionerna" tabindex="0"></div></div><p id="diff-status" class="tool-status" role="status" aria-live="polite"></p></div>

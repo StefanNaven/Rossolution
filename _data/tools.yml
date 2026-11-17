@@ -1,0 +1,42 @@
+- slug: subnet-calculator
+  title: IPv4 Subnet Calculator
+  category: Nätverk
+  code: IP
+  description: Beräkna nätadress, nätmask, broadcastadress och tillgängliga värdadresser från en IPv4/CIDR-adress.
+  featured: true
+- slug: json-formatter
+  title: JSON Formatter
+  category: Data & format
+  code: '{}'
+  description: Kontrollera JSON och formatera eller komprimera innehållet direkt i webbläsaren.
+  featured: true
+- slug: text-compare
+  title: Text Compare
+  category: Text & kod
+  code: '≠'
+  description: Jämför två textversioner och se tillagda, borttagna och oförändrade rader.
+  featured: true
+- slug: base64-converter
+  title: Base64 Converter
+  category: Data & format
+  code: '64'
+  description: Koda och avkoda UTF-8-text till och från Base64 utan en extern tjänst.
+  featured: false
+- slug: timestamp-converter
+  title: Timestamp Converter
+  category: Datum & tid
+  code: 'T'
+  description: Konvertera Unix-tid och ISO 8601 med resultat i UTC och Europe/Stockholm.
+  featured: false
+- slug: uuid-generator
+  title: UUID Generator
+  category: Identifierare
+  code: '#'
+  description: Skapa slumpmässiga UUID version 4 för testdata och konfigurationer.
+  featured: false
+- slug: password-generator
+  title: Password Generator
+  category: Säkerhet
+  code: '*'
+  description: Generera slumpmässiga lösenord med webbläsarens kryptografiska slumpgenerator.
+  featured: false

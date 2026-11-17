@@ -1,0 +1,13 @@
+---
+layout: tool
+title: "Timestamp Converter"
+category: "Datum & tid"
+description: "Konvertera Unix-tid eller ISO 8601 till UTC, svensk tid och epoch-värden."
+intro: "Konvertera Unix-tid eller ISO 8601 till UTC, svensk tid och epoch-värden."
+help_title: "Tydlig tidszon"
+help: "ISO 8601-värdet måste innehålla Z eller UTC-offset. Svensk tid visas med tidszonen Europe/Stockholm, som hanterar sommar- och vintertid."
+permalink: /tools/timestamp-converter/
+tools_js: true
+---
+
+<div class="tool-panel" data-tool="timestamp"><div class="tool-panel-heading"><div><span class="mini-kicker">DATUM / TID</span><h2>Konvertera tidsstämplar</h2></div><span class="tool-badge">UTC / CET / CEST</span></div><form class="tool-form" id="timestamp-form"><label for="timestamp-type">Indataformat</label><select id="timestamp-type"><option value="seconds">Unix timestamp (sekunder)</option><option value="milliseconds">Unix timestamp (millisekunder)</option><option value="iso">ISO 8601 med tidszon</option></select><label for="timestamp-input">Tid eller tidsstämpel</label><input id="timestamp-input" type="text" placeholder="1763388000" spellcheck="false" autocomplete="off"><p class="input-hint">ISO-exempel: 2026-11-17T14:00:00+01:00 eller 2026-11-17T13:00:00Z</p><div class="tool-actions"><button class="button button-primary" type="submit">Konvertera</button><button class="small-button" type="button" id="timestamp-now">Använd aktuell tid</button></div></form><div id="timestamp-result" class="tool-results" hidden><div class="result-heading"><h3>Konverterad tid</h3><button class="small-button" data-copy-target="#timestamp-summary" type="button">Kopiera resultat</button></div><dl id="timestamp-fields" class="result-grid"></dl><pre id="timestamp-summary" class="sr-only"></pre></div><p id="timestamp-status" class="tool-status" role="status" aria-live="polite"></p></div>
