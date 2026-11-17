@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 620">
+<defs>
+  <linearGradient id="bg" x1=".1" y1="0" x2=".9" y2="1"><stop stop-color="#182d42"/><stop offset=".5" stop-color="#0d1c31"/><stop offset="1" stop-color="#172539"/></linearGradient>
+  <linearGradient id="pink" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#ff6080"/><stop offset="1" stop-color="#ffc3ad"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#2785b5"/><stop offset="1" stop-color="#7bebed"/></linearGradient>
+  <radialGradient id="shine"><stop stop-color="#2b6780" stop-opacity=".4"/><stop offset="1" stop-color="#102035" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" stroke="#688aa3" stroke-opacity=".13" fill="none"/></pattern>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="16" stdDeviation="15" flood-color="#010917" flood-opacity=".40"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<rect x="36" y="22" width="708" height="562" rx="31" fill="url(#bg)" stroke="#37516c" stroke-width="1.2"/>
+<rect x="37" y="23" width="706" height="560" rx="30" fill="url(#grid)"/>
+<ellipse cx="377" cy="322" rx="314" ry="243" fill="url(#shine)"/>
+<!-- backbone and connection lines -->
+<g stroke="#608da7" stroke-width="2" fill="none" opacity=".62">
+ <path d="M368 294C310 260 264 222 182 178"/><path d="M405 295C477 245 545 213 620 170"/>
+ <path d="M350 332C279 349 215 399 174 454"/><path d="M421 333C485 355 527 393 610 453"/>
+ <path d="M385 385v84"/><path d="M232 178c105-73 288-82 390-9" stroke-dasharray="5 9" opacity=".7"/>
+ <path d="M198 454q194 114 410 0" stroke-dasharray="5 10" opacity=".7"/>
+</g>
+<g fill="#81d5e9"><circle cx="286" cy="246" r="3"/><circle cx="520" cy="244" r="3"/><circle cx="285" cy="375" r="3"/><circle cx="495" cy="386" r="3"/></g>
+<!-- center orbit -->
+<circle cx="387" cy="316" r="145" stroke="#5c97b0" stroke-width="1.5" fill="none" stroke-dasharray="4 12" opacity=".43"/>
+<circle cx="387" cy="316" r="107" stroke="#577d99" stroke-width="1.4" fill="#112d40" fill-opacity=".55"/>
+<circle cx="387" cy="316" r="88" stroke="#7fdde8" stroke-width="1.2" fill="#19283f"/>
+<circle cx="387" cy="316" r="73" stroke="#8cb2cc" stroke-opacity=".25" fill="none" stroke-width="12"/>
+<circle cx="387" cy="316" r="55" fill="#172a40" stroke="#79b4cc" stroke-opacity=".6"/>
+<!-- central R -->
+<path d="M360 348v-66h34c27 0 29 27 7 36l23 28" fill="none" stroke="url(#pink)" stroke-width="12" stroke-linejoin="round"/>
+<circle cx="426" cy="349" r="7" fill="#7ce7e8"/>
+<!-- outer anchor nodes -->
+<g fill="#17334a" stroke="#81c4dc" stroke-width="2"><circle cx="182" cy="178" r="10"/><circle cx="621" cy="168" r="10"/><circle cx="174" cy="453" r="10"/><circle cx="610" cy="452" r="10"/><circle cx="387" cy="470" r="9"/></g>
+<g fill="#a1f0ef"><circle cx="182" cy="178" r="3"/><circle cx="621" cy="168" r="3"/><circle cx="174" cy="453" r="3"/><circle cx="610" cy="452" r="3"/></g>
+<!-- top-left card -->
+<g filter="url(#shadow)"><rect x="67" y="85" width="194" height="101" rx="13" fill="#20384d" stroke="#56758a"/><rect x="81" y="103" width="34" height="34" rx="9" fill="#33516a"/><circle cx="98" cy="113" r="6" stroke="#90e9ed" stroke-width="2" fill="none"/><path d="M86 128q12-17 24 0" fill="none" stroke="#90e9ed" stroke-width="2"/><text x="125" y="116" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#f4f8fe">IDENTITY</text><text x="125" y="131" font-family="Arial,sans-serif" font-size="9" fill="#92acc0">Åtkomst &amp; federation</text><path d="M82 153h141" stroke="#3d5a70"/><path d="M83 169h56" stroke="#ff8298" stroke-width="4" stroke-linecap="round"/><path d="M148 169h43" stroke="#6bd6e8" stroke-width="4" stroke-linecap="round"/></g>
+<!-- top-right card -->
+<g filter="url(#shadow)"><rect x="520" y="80" width="204" height="100" rx="13" fill="#20384d" stroke="#56758a"/><rect x="535" y="98" width="35" height="35" rx="9" fill="#37485d"/><path d="M553 103l11 5v8c0 7-5 11-11 14-7-3-11-7-11-14v-8Z" stroke="#ff9aab" stroke-width="2" fill="none"/><path d="m548 116 4 4 6-8" fill="none" stroke="#ff9aab" stroke-width="2"/><text x="579" y="114" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#f4f8fe">SECURITY</text><text x="579" y="129" font-family="Arial,sans-serif" font-size="9" fill="#92acc0">Skydd &amp; insyn</text><path d="M534 152h157" stroke="#3d5a70"/><path d="M535 167h90" stroke="#6bd6e8" stroke-width="4" stroke-linecap="round"/><path d="M634 167h31" stroke="#ff8298" stroke-width="4" stroke-linecap="round"/></g>
+<!-- bottom-left card -->
+<g filter="url(#shadow)"><rect x="56" y="430" width="211" height="99" rx="13" fill="#20384d" stroke="#56758a"/><rect x="71" y="450" width="34" height="34" rx="8" fill="#33516a"/><rect x="77" y="458" width="22" height="8" rx="2" stroke="#8ce0ec" stroke-width="1.5" fill="none"/><rect x="77" y="470" width="22" height="8" rx="2" stroke="#8ce0ec" stroke-width="1.5" fill="none"/><circle cx="82" cy="462" r="1.5" fill="#ff8da6"/><circle cx="82" cy="474" r="1.5" fill="#ff8da6"/><text x="115" y="462" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f4f8fe">INFRASTRUCTURE</text><text x="115" y="479" font-family="Arial,sans-serif" font-size="9" fill="#92acc0">Plattform &amp; trafik</text><path d="M71 501h170" stroke="#3d5a70"/><path d="M72 515h61" stroke="#6bd6e8" stroke-width="4" stroke-linecap="round"/><path d="M142 515h39" stroke="#ff8298" stroke-width="4" stroke-linecap="round"/></g>
+<!-- bottom-right card -->
+<g filter="url(#shadow)"><rect x="523" y="426" width="203" height="103" rx="13" fill="#20384d" stroke="#56758a"/><text x="540" y="453" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#f4f8fe">CONNECTED SYSTEMS</text><text x="540" y="469" font-family="Arial,sans-serif" font-size="9" fill="#9fb6c7">En sammanhängande helhet</text><path d="M541 495h161" stroke="#3d5a70"/><g stroke="#83d4e3" stroke-width="2" fill="none"><circle cx="559" cy="508" r="5"/><circle cx="622" cy="508" r="5"/><circle cx="686" cy="508" r="5"/><path d="M564 508h53m10 0h54"/></g></g>
+</svg>

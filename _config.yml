@@ -1,0 +1,26 @@
+title: Rossolution
+email: info@rossolution.se
+description: "Teknisk lösningsarkitektur och IT-specialistkompetens för komplexa IT-miljöer. Rossolution arbetar med identitet, cybersäkerhet, Microsoft 365 och hybrid infrastruktur."
+url: "https://www.rossolution.se"
+baseurl: ""
+lang: sv
+timezone: Europe/Stockholm
+markdown: kramdown
+permalink: /articles/:title/
+exclude:
+  - README.md
+  - news-guide.md
+  - article-template.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - node_modules
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Rossolution
